@@ -117,7 +117,7 @@ public class AudioVisualizationView: BaseNibView {
 	// MARK: - Record Mode Handling
 
 	public func add(meteringLevel: Float, ignoreWrite: Bool = false) {
-		if ignoreWrite == true{
+		if ignoreWrite == false{
 			guard self.audioVisualizationMode == .write else {
 				fatalError("trying to populate audio visualization view in read mode")
 			}
